@@ -1,0 +1,7 @@
+#Fichiers à ne pas envoyer
+
+#Dossier comportant toutes les dépendences
+node_modules
+
+#Fichier comportant nos variables d'environement (port/User/Password)
+.env
