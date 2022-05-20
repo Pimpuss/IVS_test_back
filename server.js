@@ -7,7 +7,7 @@ const express = require("express");
 // Import de Morgan, Permet d'affichier plus d'informations dans la console pour le dév lors du lancement du server
 const morgan = require("morgan");
 
-// Import de cors,
+// Import de cors permettant d'effectuer des requête sur le server précis
 const cors = require("cors");
 
 // Import de mysql du fichier db comprenant toutes la configuration pour la connection à la BDD
@@ -29,9 +29,11 @@ mysql.connect((err) => {
     );
   }
 });
-
+//Utilisation de cors pour le serv
 server.use(cors());
+//Utilisation de morgan pour le serv
 server.use(morgan("dev"));
+// Traduction du Json reçu depuis le front pour express
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
