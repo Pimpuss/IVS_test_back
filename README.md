@@ -18,7 +18,7 @@ Une fois l'installation terminée, votre fichier ```package.json``` doit conteni
 ▶ Enfin utilisez la commande ```npm start```  en ayant bien modifié le ```Script``` dans le ```package.json``` en mettant ```"start": "nodemon server.js"``` pour lancer le projet en local à l'aide de nodemon. Si tout se passe correctement sur l'adresse http://localhost:4242/ (selon vos variables d'environement) vous devez avoir sur votre page web "Tout fonctionne !"
 Plus qu'a aller sur les différentes routes /organisations /buildings /pieces pour afficher les informations de l'APi.
 
-Veillez à ce que le serveur Backend tourne également sur votre machine. Si vous ne l'avez pas déjà fait, [cliquez ici pour accéder au repo Backend](https://github.com/Pimpuss/IVS_test_front) et cloner son contenu sur votre machine.
+Veillez à ce que le serveur Frontend tourne également sur votre machine. Si vous ne l'avez pas déjà fait, [cliquez ici pour accéder au repo Backend](https://github.com/Pimpuss/IVS_test_front) et cloner son contenu sur votre machine.
 
 ## 📝 Description :
 
