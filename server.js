@@ -13,6 +13,7 @@ const cors = require("cors");
 // Import de mysql du fichier db comprenant toutes la configuration pour la connection à la BDD
 const mysql = require("./config/db");
 
+// Import de l'index comportant toutes les routes
 const routes = require("./routes/index");
 
 // Creation de server lui donnant toute la puissance de express
@@ -33,11 +34,13 @@ server.use(cors());
 server.use(morgan("dev"));
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
+
+//Appel des routes leur donnant leur intitulé
 server.use("/organisations", routes.organisations);
 server.use("/buildings", routes.buildings);
 server.use("/pieces", routes.pieces);
 
-// Effectue un get à la racine du server et nous renvoie un res status disant que le serveur tourne
+// Effectue un GET à la racine du server et nous renvoie un res status disant que le serveur tourne
 server.get("/", (req, res) => {
   res.status(200).json("Tout fonctionne !");
 });
