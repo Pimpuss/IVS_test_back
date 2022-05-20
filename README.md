@@ -28,7 +28,7 @@ Pour ce faire, une base de données sous MSQL ainsi qu'un serveur back tournant 
 J'ai voulu pousser un peu plus les fonctionnalité, de façon à pouvoir ajouter des organisations, des batiments ou même des piéces, de pouvoir les editer à l'aide du petit stylo (le nom uniquement pour les organisation, le nom pour les batiments, son code postale et l'oganisation de rattachement et le nom pour les pièces, sa capacité de personne et le batiment de rattachement). 
 Ainsi que la possibilité des supprimer des informations en cliquant sur la petite corbeille mais à être vigilant pour les organisation et les batiments qui sont bien souvent rattaché eux même aux organisations pour les batiments et les pièces pour les buildings.
 
-## 🛠 Technologie utilisée : 
+## 🛠 Technologies utilisée : 
 
 IHM - Front : ReactJs <br>
 Base de données : MySQL <br>
